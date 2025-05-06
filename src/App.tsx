@@ -1,9 +1,24 @@
-import ListGroup from './components/ListGroup';
 
-function App(){
+import Button from "./components/Button";
+// import ListGroup from './components/ListGroup';
 
-  return <div><ListGroup/></div>
+function App() {
+  const buttonNames = [
+    "primary",
+    "secondary",
+    "success",
+    "danger",
+    "warning",
+    "info",
+    "light",
+    "dark"
+  ];
+
+  return (
+    <>
+      <Button buttonClassName={buttonNames} />
+    </>
+  );
 }
-
 
 export default App;
