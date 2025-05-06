@@ -1,5 +1,6 @@
 
 import Button from "./components/Button";
+import ListGroup from "./components/ListGroup";
 // import ListGroup from './components/ListGroup';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <>
+      <ListGroup/>
       <Button buttonClassName={buttonNames} />
     </>
   );
