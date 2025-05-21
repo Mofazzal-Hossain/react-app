@@ -1,4 +1,6 @@
 
+import { SlCalender } from "react-icons/sl";
+
 interface props {
   item: string;
   isActive: boolean;
@@ -15,8 +17,9 @@ function ListItems({ item, isActive,index, onSelect }: props) {
         onSelect();
         console.log(item, index);
       }}
+      style={{ backgroundColor: 'red', cursor: 'pointer', color: 'white' }}
     >
-      {item}
+      <SlCalender size='40' /> {item}
     </li>
   );
 }
